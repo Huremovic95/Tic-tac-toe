@@ -1,3 +1,6 @@
+body {
+    background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
+}
 
 #grid-game {
     display: grid;
@@ -9,7 +12,7 @@
 }
 
 .cell {
-    border: 1px solid #000;
+    border: 1px solid whitesmoke;
     width: 100px;
     height: 100px;
     cursor: pointer;
