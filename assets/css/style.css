@@ -1,0 +1,40 @@
+
+#grid-game {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin: 50px 0;
+}
+
+.cell {
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+/* 
+how to remove the top, right, bottom and left border of the whole grid.
+
+credit section in read.me file
+https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e-g-tic-tac-toe-ui-4ao8 
+*/
+
+/* For the first row */
+.cell:nth-child(-n + 3) {
+    border-top: none;
+} 
+/* For the last column */
+.cell:nth-child(3n) {
+    border-right: none;
+}
+/* For the first column */
+.cell:nth-child(3n  - 2) {
+    border-left: none;
+} 
+/* For the last row */
+.cell:nth-child(n + 7) {
+    border-bottom: none;
+}
