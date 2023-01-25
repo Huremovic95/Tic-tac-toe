@@ -1,5 +1,11 @@
-body {
+#game-body {
     background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
+}
+
+#title-game{
+   text-align: center;
+   font-size: xx-large;
+   color: white;
 }
 
 #grid-game {
@@ -40,4 +46,21 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 /* For the last row */
 .cell:nth-child(n + 7) {
     border-bottom: none;
+}
+
+#player1-score{
+    float:left;
+    margin-left: 15%;
+    color: whitesmoke;
+}
+
+#player2-score{
+    float:right;
+    margin-right: 15%;
+    color:whitesmoke;
+}
+
+#end-game {
+    margin-top: 50px;
+    display: none;
 }
