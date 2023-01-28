@@ -51,6 +51,12 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
     border-bottom: none;
 }
 
+#turn-message {
+    text-align: center;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
 #player1-score{
     float:left;
     margin-left: 15%;
