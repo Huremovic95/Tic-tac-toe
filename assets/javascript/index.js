@@ -8,7 +8,7 @@ const winCondition = [
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // vertical
     [0, 4, 8], [2, 4, 6] // oblique
 ];
-// creates a array with 9 empty spaces
+// creates an array thats 9 numbers long
 let spaces = Array.from(Array(9).keys());
 
 let oTurn = "O";
@@ -25,8 +25,12 @@ function startGame (){
 }
 
 function cellActivated (cell){
+    //if cell is not yet in use
+    if (typeof spaces[cell.target.id] == 'number'){
     //cell.target.id takes the specifik id of the cell clicked
-    updateCell(cell.target.id, currentPlayer)
+    updateCell(cell.target.id, currentPlayer);
+    checkWinner();
+}
 }
 
 function updateCell(cellId, currentPlayer){
