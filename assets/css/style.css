@@ -55,6 +55,7 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
     text-align: center;
     font-size: x-large;
     color: whitesmoke;
+    padding: 25px 0;
 }
 
 #player1-score{
@@ -71,5 +72,4 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 #end-game {
     margin-top: 50px;
-    display: none;
 }

@@ -1,9 +1,10 @@
 let gridCells = document.getElementsByClassName("cell");
 let GameOverText = document.getElementById("game-over-text");
 let restart = document.getElementById("restart");
-let turnMessage = document.getElementById ("turn-message");
+let turnMessage = document.getElementById("turn-message");
+let winnerText = document.getElementById("game-over-text");
 
-const winCondition = [
+let winCondition = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8], // horizontal
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // vertical
     [0, 4, 8], [2, 4, 6] // oblique
@@ -29,7 +30,8 @@ function cellActivated (cell){
     if (typeof spaces[cell.target.id] == 'number'){
     //cell.target.id takes the specifik id of the cell clicked
     updateCell(cell.target.id, currentPlayer);
-    checkWinner();
+
+    checkWinner();    
 }
 }
 
@@ -47,6 +49,25 @@ function changePlayer(){
     }
 
     turnMessage.innerText = `${currentPlayer}'s turn`;
+}
+
+function checkWinner(){
+  for (let i = 0; i < winCondition.length; i++){
+    /* because winconditon are 9 arrays nested in one array,
+    got to split the arrays in 3 different variables */
+    let win = winCondition[i];
+    let cellOne = spaces[win[0]];
+    let cellTwo = spaces[win[1]];
+    let cellThree = spaces[win[2]];
+
+    if (cellOne === cellTwo && cellOne === cellThree){
+        winnerText.textContent = `${currentPlayer} won!`;
+        break;
+    } else {
+        winnerText.textContent = "It's a draw!";
+        break;
+    }
+}
 }
 
 startGame();
