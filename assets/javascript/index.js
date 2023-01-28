@@ -8,7 +8,7 @@ const winCondition = [
     [0, 4, 8], [2, 4, 6] // oblique
 ];
 // creates a array with 9 empty spaces
-let spaces = Array(9).fill(null);
+let spaces = Array.from(Array(9).keys());
 
 let oTurn = "O";
 let xTurn = "X";
@@ -16,22 +16,20 @@ let currentPlayer = xTurn;
 
 function startGame (){
 
-    gridCells.forEach(cell => cell.addEventListener("click", cellActivated));
-
+    for (let i = 0; i < gridCells.length; i++) {
+		gridCells[i].innerText = '';
+		gridCells[i].addEventListener('click', cellActivated, false);
+}
 }
 
-function cellActivated (){
+function cellActivated (cell){
 
-    let cellId = this.getAttribute("data-value");
-    
-    if (spaces[cellId] === null){
-        updateCell(this, cellId)
-    }
+    updateCell(cell.target.id, currentPlayer)
 }
 
-function updateCell(cell, index){
-    options[index] = currentPlayer;
-    cell.textContent = currentPlayer;
+function updateCell(cellId, currentPlayer){
+    spaces[cellId] = currentPlayer;
+    document.getElementById(cellId).innerText = currentPlayer;
 }
 
 startGame();
