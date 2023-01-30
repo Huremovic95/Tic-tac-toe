@@ -30,9 +30,8 @@ function cellActivated (cell){
     if (typeof spaces[cell.target.id] == 'number'){
     //cell.target.id takes the specifik id of the cell clicked
     updateCell(cell.target.id, currentPlayer);
-
-    checkWinner();    
 }
+    checkWinner();
 }
 
 function updateCell(cellId, currentPlayer){
@@ -52,22 +51,32 @@ function changePlayer(){
 }
 
 function checkWinner(){
+    let roundWon = false;
+
   for (let i = 0; i < winCondition.length; i++){
-    /* because winconditon are 9 arrays nested in one array,
+     /*because winconditon are 9 arrays nested in one array,
     got to split the arrays in 3 different variables */
     let win = winCondition[i];
     let cellOne = spaces[win[0]];
     let cellTwo = spaces[win[1]];
     let cellThree = spaces[win[2]];
 
-    if (cellOne === cellTwo && cellOne === cellThree){
-        winnerText.textContent = `${currentPlayer} won!`;
-        break;
-    } else {
-        winnerText.textContent = "It's a draw!";
-        break;
+    if(cellOne == "" || cellTwo == "" || cellThree == ""){
+            continue;
+        }
+    if(cellOne == cellTwo && cellTwo == cellThree){
+            roundWon = true;
+            break;
+        }
+} 
+
+  if(roundWon){
+        winnerText.textContent = `${currentPlayer} wins!`;
     }
-}
+    else if(!spaces.includes('number')){
+        winnerText.textContent = `Draw!`;
+    }
+
 }
 
 startGame();
