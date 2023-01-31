@@ -9,8 +9,10 @@ let winCondition = [
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // vertical
     [0, 4, 8], [2, 4, 6] // oblique
 ];
-// creates an array thats 9 numbers long
-let spaces = Array.from(Array(9).keys());
+// 9 times null array
+let spaces = Array(9).fill(null);
+
+let gameRunning = false;
 
 let oTurn = "O";
 let xTurn = "X";
@@ -18,6 +20,7 @@ let currentPlayer = xTurn;
 
 function startGame (){
     turnMessage.innerText = `${currentPlayer}'s turn`;
+    gameRunning = true;
     
     for (let i = 0; i < gridCells.length; i++) {
 		gridCells[i].innerText = '';
@@ -26,11 +29,13 @@ function startGame (){
 }
 
 function cellActivated (cell){
+    if (gameRunning){
+   //cell.target.id takes the specifik id of the cell clicked
+    let id = cell.target.id;
     //if cell is not yet in use
-    if (typeof spaces[cell.target.id] == 'number'){
-    //cell.target.id takes the specifik id of the cell clicked
-    updateCell(cell.target.id, currentPlayer);
-}
+    if (!spaces[id]){
+    updateCell(id, currentPlayer);
+}}
     checkWinner();
 }
 
@@ -50,33 +55,33 @@ function changePlayer(){
     turnMessage.innerText = `${currentPlayer}'s turn`;
 }
 
+// https://stackoverflow.com/questions/66001788/tic-tac-toe-winning-condition-checks-confused
 function checkWinner(){
     let roundWon = false;
 
-  for (let i = 0; i < winCondition.length; i++){
-     /*because winconditon are 9 arrays nested in one array,
-    got to split the arrays in 3 different variables */
-    let win = winCondition[i];
-    let cellOne = spaces[win[0]];
-    let cellTwo = spaces[win[1]];
-    let cellThree = spaces[win[2]];
+        for (let i = 0; i < winCondition.length; i++) {
+            let win = winCondition[i];
+            let a = spaces[win[0]];
+            let b = spaces[win[1]];
+            let c = spaces[win[2]];
+            
+            if (a === null || b === null || c === null) {
+                continue;
+            }
+            
+            if (a === b && b === c) {
+                roundWon = true;
+                break
+            }
+}
 
-    if(cellOne == "" || cellTwo == "" || cellThree == ""){
-            continue;
-        }
-    if(cellOne == cellTwo && cellTwo == cellThree){
-            roundWon = true;
-            break;
-        }
-} 
-
-  if(roundWon){
-        winnerText.textContent = `${currentPlayer} wins!`;
-    }
-    else if(!spaces.includes('number')){
-        winnerText.textContent = `Draw!`;
-    }
+if (roundWon){
+    changePlayer();
+    winnerText.innerText = `${currentPlayer} has won`;
+    gameRunning = false;
+}
 
 }
+
 
 startGame();
