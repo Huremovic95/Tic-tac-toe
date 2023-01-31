@@ -1,6 +1,6 @@
 let gridCells = document.getElementsByClassName("cell");
 let GameOverText = document.getElementById("game-over-text");
-let restart = document.getElementById("restart");
+let restart = document.getElementsByClassName("restart");
 let turnMessage = document.getElementById("turn-message");
 let winnerText = document.getElementById("game-over-text");
 
@@ -9,7 +9,7 @@ let winCondition = [
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // vertical
     [0, 4, 8], [2, 4, 6] // oblique
 ];
-// 9 times null array
+// array with 9 null's
 let spaces = Array(9).fill(null);
 
 let gameRunning = false;
@@ -84,8 +84,17 @@ if (roundWon){
     winnerText.innerText = "It's a draw";
     gameRunning = false;
 }
-
 }
 
-
 startGame();
+
+restart.addEventListener("click", () => {
+    spaces.fill(null);
+    gridCells.forEach( cell => {
+        cell.innerText = null;
+        cell.style.backgroundColor='';})
+    
+    currentPlayer = xTurn;
+    
+    startGame();
+})
