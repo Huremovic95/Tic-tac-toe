@@ -1,29 +1,39 @@
 let gridCells = document.getElementsByClassName("cell");
 let GameOverText = document.getElementById("game-over-text");
-let restart = document.getElementsByClassName("restart");
+let restartButton = document.getElementById("restart");
 let turnMessage = document.getElementById("turn-message");
 let winnerText = document.getElementById("game-over-text");
 
+let spaces = '';
 let winCondition = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8], // horizontal
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // vertical
     [0, 4, 8], [2, 4, 6] // oblique
 ];
-// array with 9 null's
-let spaces = Array(9).fill(null);
 
 let gameRunning = false;
+let gamesPlayed = 1;
 
 let oTurn = "O";
 let xTurn = "X";
 let currentPlayer = xTurn;
 
 function startGame (){
-    turnMessage.innerText = `${currentPlayer}'s turn`;
+    // array with 9 null's
+    spaces = Array(9).fill(null);
+
     gameRunning = true;
+    // if gamesplayed is even O starts.
+    if(gamesPlayed % 2 === 0){
+        currentPlayer = oTurn;
+    } else {
+        currentPlayer = xTurn;
+    }
+
+    turnMessage.innerText = `${currentPlayer}'s turn`;
     
     for (let i = 0; i < gridCells.length; i++) {
-		gridCells[i].innerText = '';
+		gridCells[i].innerText = ' ';
 		gridCells[i].addEventListener('click', cellActivated);
 }
 }
@@ -76,8 +86,9 @@ function checkWinner(){
 }
 
 if (roundWon){
+    if(gameRunning){
     changePlayer();
-    winnerText.innerText = `${currentPlayer} has won`;
+    winnerText.innerText = `${currentPlayer} has won`;}
     gameRunning = false;
     //if spaces does not include a null (so all cells are filled)
 } else if (!spaces.includes(null)) {
@@ -88,13 +99,9 @@ if (roundWon){
 
 startGame();
 
-restart.addEventListener("click", () => {
-    spaces.fill(null);
-    gridCells.forEach( cell => {
-        cell.innerText = null;
-        cell.style.backgroundColor='';})
-    
-    currentPlayer = xTurn;
-    
+restartButton.addEventListener("click", restart);
+
+function restart() {
+    gamesPlayed ++;
     startGame();
-})
+}
