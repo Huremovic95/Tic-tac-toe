@@ -79,6 +79,10 @@ if (roundWon){
     changePlayer();
     winnerText.innerText = `${currentPlayer} has won`;
     gameRunning = false;
+    //if spaces does not include a null (so all cells are filled)
+} else if (!spaces.includes(null)) {
+    winnerText.innerText = "It's a draw";
+    gameRunning = false;
 }
 
 }
