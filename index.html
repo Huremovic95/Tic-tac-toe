@@ -5,13 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tic Tac Toe game for 2 players">
-    <meta name="keywords" content="Tic tac toe, game, two players">
+    <meta name="keywords" content="Tic tac toe, noughts and crosses, Xs and Os, game, two players">
     <link href="assets/css/style.css" rel="stylesheet">
     <title>Tic Tac Toe</title>
 </head>
 <body>
     <main>
-        
+        <section id="title-game">
+            <h1>Tic Tac Toe</h1>
+        </section>
+
+        <section id="game-info">
+            <div id="main-info">
+
+            </div>
+            <div id="history">
+
+            </div>
+        </section>
+
+        <section id="form">
+            <form action="game.html">
+                <label for="firstplayer">Player 1:</label>
+                <input type="text" id="firstplayer" name="firstplayer" required>
+                <label for="secondplayer">Player 2:</label>
+                <input type="text" id="secondplayer" name="secondplayer" required>
+                <input type="submit" value="Start Game">
+            </form>
+        </section>
     
     </main>
     <script src="assets/javascript/index.js"></script>

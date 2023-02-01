@@ -1,3 +1,13 @@
+/* index.html */
+
+/* form section */
+input{
+    display: block;
+    margin-left: 20px;
+}
+
+/* game.html */
+
 #game-body {
     background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
 }
