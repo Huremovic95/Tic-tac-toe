@@ -91,6 +91,7 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
     text-align: center;
     font-size: 50px;
     color: whitesmoke;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -100,4 +101,5 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
     color: whitesmoke;
     border: whitesmoke solid 1px;
     border-radius: 5px;
+    margin-top: 20px;
 }

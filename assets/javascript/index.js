@@ -3,6 +3,7 @@ let GameOverText = document.getElementById("game-over-text");
 let restartButton = document.getElementById("restart");
 let turnMessage = document.getElementById("turn-message");
 let winnerText = document.getElementById("game-over-text");
+let endGame = document.getElementById("end-game");
 
 let spaces = '';
 let winCondition = [
@@ -21,7 +22,8 @@ let currentPlayer = xTurn;
 function startGame (){
     // array with 9 null's
     spaces = Array(9).fill(null);
-
+    // when start end-game function isn't visible
+    endGame.style.display = "none";
     gameRunning = true;
     // if gamesplayed is even O starts.
     if(gamesPlayed % 2 === 0){
@@ -90,10 +92,12 @@ if (roundWon){
     changePlayer();
     winnerText.innerText = `${currentPlayer} has won`;}
     gameRunning = false;
+    endGame.style.display = "grid";
     //if spaces does not include a null (so all cells are filled)
 } else if (!spaces.includes(null)) {
     winnerText.innerText = "It's a draw";
     gameRunning = false;
+    endGame.style.display = "grid";
 }
 }
 
