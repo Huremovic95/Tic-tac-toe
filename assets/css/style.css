@@ -157,9 +157,21 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 .btn {
     padding: 20px;
     font-size: 25px;
-    background-color: rgb(30, 0, 230);
     color: whitesmoke;
     border: whitesmoke solid 1px;
     border-radius: 5px;
     margin-top: 20px;
+}
+
+.btn--blue {
+    background-color: rgb(30, 0, 230);
+}
+
+.btn--red {
+    background-color: rgb(230, 0, 30);
+}
+
+#end-game a{
+    text-decoration: none;
+    color: white;
 }
