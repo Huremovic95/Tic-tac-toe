@@ -37,8 +37,8 @@ function startGame (){
     }
 
     turnMessage.innerText = `${currentPlayer}'s turn`;
-    firstPlayerScore = `X Player Score: ${xScore}`;
-    secondPlayerScore = `O Player Score: ${oScore}`;
+    firstPlayerScore.innerText = `X Player Score: ${xScore}`;
+    secondPlayerScore.innerText = `O Player Score: ${oScore}`;
     
     for (let i = 0; i < gridCells.length; i++) {
 		gridCells[i].innerText = ' ';
