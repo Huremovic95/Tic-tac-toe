@@ -4,6 +4,8 @@ let restartButton = document.getElementById("restart");
 let turnMessage = document.getElementById("turn-message");
 let winnerText = document.getElementById("game-over-text");
 let endGame = document.getElementById("end-game");
+let firstPlayerScore = document.getElementById("player1-score");
+let secondPlayerScore = document.getElementById("player2-score");
 
 let spaces = '';
 let winCondition = [
@@ -18,9 +20,11 @@ let gamesPlayed = 1;
 let oTurn = "O";
 let xTurn = "X";
 let currentPlayer = xTurn;
+let xScore = 0;
+let oScore = 0;
 
 function startGame (){
-    // array with 9 null's
+    // array with 9 null's and resets everytime function is called
     spaces = Array(9).fill(null);
     // when start end-game function isn't visible
     endGame.style.display = "none";
@@ -33,6 +37,8 @@ function startGame (){
     }
 
     turnMessage.innerText = `${currentPlayer}'s turn`;
+    firstPlayerScore = `X Player Score: ${xScore}`;
+    secondPlayerScore = `O Player Score: ${oScore}`;
     
     for (let i = 0; i < gridCells.length; i++) {
 		gridCells[i].innerText = ' ';
@@ -91,6 +97,11 @@ if (roundWon){
     if(gameRunning){
     changePlayer();
     winnerText.innerText = `${currentPlayer} has won`;}
+    if (currentPlayer === xTurn){
+        xScore++;
+    } else {
+        oScore++;
+    }
     gameRunning = false;
     endGame.style.display = "grid";
     //if spaces does not include a null (so all cells are filled)
