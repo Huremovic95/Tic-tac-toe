@@ -12,6 +12,13 @@ a {
     color: white;
 }
 
+.title-game {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+ }
+
 /* game-info section */
 #game-info {
     color: whitesmoke;
@@ -50,13 +57,6 @@ a {
 
 #game-body {
     background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
-}
-
-.title-game {
-   margin-top: 20px;
-   text-align: center;
-   font-size: 45px;
-   color: white;
 }
 
 /* game section */
@@ -128,7 +128,7 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
     display: none;
     justify-content: center;
     align-content: center;
-    width: 70%;
+    width: 75%;
     height: 40%;
     background: rgba(135, 0, 135, 0.8);
     padding: 50px;
@@ -216,6 +216,77 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
         width: 125px;
         height: 125px;
         font-size: 100px;
-        color:whitesmoke;
+    }
+
+    /* players section*/
+    #turn-message {
+        font-size: 50px;
+        padding: 35px 0;
+    }
+    
+    #player1-score{
+        margin-left: 10%;
+    }
+    
+    #player2-score{
+        margin-right: 10%;
+    }
+
+    /* end-game section */
+    #end-game {
+        margin-left: 3%;     
+    }
+
+    #game-over-text {
+        font-size: 75px;
+    }
+
+    .btn {
+        padding: 25px;
+        font-size: 32px;
+        margin-top: 25px;
+    }
+}
+
+/* for medium screens sizes from 950px and up */
+
+@media screen and (min-width: 950px){
+   
+    .title-game {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    /* index.html */
+    body{
+        background-size: 750px;
+    }
+    /* game-info section */
+    #game-info {
+        background-color: rgba(75, 75, 75, 0);
+    }
+
+    /* start-btn section */
+    #start-btn {
+        background-color: rgba(75, 75, 75, 0);
+    }
+
+    #start-game-btn {
+        margin-bottom: 50px;
+    }
+
+    /* players section */
+    #player1-score {
+        margin-bottom: 50px;
+    }
+
+    #player2-score {
+        margin-bottom: 50px;
+    }
+
+    /* end-game section */
+    #end-game {
+        height: 60%;
+        width: 85%;     
     }
 }
