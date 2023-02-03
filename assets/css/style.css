@@ -3,7 +3,7 @@
 body {
     background: url(../images/xo-image.png) center center / cover no-repeat fixed;
     background-size: 400px;
-    font-size: large;
+    font-size: 20px;
     background-color: rgba(75, 75, 75)
 }
 
@@ -25,7 +25,7 @@ a {
 }
 
 #history h2 {
-    font-size: xx-large;
+    font-size: 35px;
 }
 
 /* start-btn section */
@@ -38,7 +38,7 @@ a {
     font-size: 25px;
     background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
     cursor: pointer;
-    width: 170px;
+    width: 200px;
     border-color: whitesmoke;
     display: block;
     margin: auto;
@@ -46,7 +46,7 @@ a {
     border-radius: 5px;
 }
 
-/* game.html */
+/* game section */
 
 #game-body {
     background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
@@ -55,7 +55,7 @@ a {
 .title-game {
    margin-top: 20px;
    text-align: center;
-   font-size: xx-large;
+   font-size: 45px;
    color: white;
 }
 
@@ -106,7 +106,7 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 /* players section*/
 #turn-message {
     text-align: center;
-    font-size: x-large;
+    font-size: 35px;
     color: whitesmoke;
     padding: 25px 0;
 }
@@ -171,4 +171,37 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 #not-found {
     text-align: center;
+}
+
+/* for medium screens sizes from 500px and up */
+
+@media screen and (min-width: 500px){
+    
+    /* index.html page */
+    body{
+        background-size: 600px;
+        font-size: 30px;
+    }
+
+    /* title all pages */
+    .title-game {
+        font-size: 60px;
+    }
+
+    /*game-info section */
+    #history, #main-info, #info-form {
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    #history h2 {
+        font-size: 50px;
+    }
+
+    /* start-btn section */
+    #start-game-btn {
+        padding: 20px;
+        font-size: 40px;
+        width: 300px;
+    }
 }
