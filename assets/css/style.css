@@ -113,13 +113,13 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 #player1-score{
     float:left;
-    margin-left: 10%;
+    margin-left: 8%;
     color: whitesmoke;
 }
 
 #player2-score{
     float:right;
-    margin-right: 10%;
+    margin-right: 8%;
     color:whitesmoke;
 }
 
@@ -160,4 +160,15 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 .btn--red {
     background-color: rgb(230, 0, 30);
+}
+
+/* 404 page */
+
+#error-page {
+    background: url(../images/tic-tac-toe-image.png) center center / cover no-repeat fixed;
+    background-size: 500px;
+}
+
+#not-found {
+    text-align: center;
 }
