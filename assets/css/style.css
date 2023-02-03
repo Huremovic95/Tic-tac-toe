@@ -1,10 +1,17 @@
 /* index.html */
+
 body {
     background: url(../images/xo-image.png) center center / cover no-repeat fixed;
     background-size: 400px;
     font-size: large;
     background-color: rgba(75, 75, 75)
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* game-info section */
 #game-info {
     color: whitesmoke;
@@ -21,40 +28,24 @@ body {
     font-size: xx-large;
 }
 
-/* form section */
-#form {
+/* start-btn section */
+#start-btn {
     background-color: rgba(75, 75, 75, 0.5);
 }
 
-input {
+#start-game-btn {
+    padding: 12px;
+    font-size: 25px;
+    background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
+    cursor: pointer;
+    width: 170px;
+    border-color: whitesmoke;
     display: block;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    margin: auto;
     color: whitesmoke;
     border-radius: 5px;
 }
 
-input[type=submit] {
-    padding: 10px;
-    font-size: 20px;
-    background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
-    cursor: pointer;
-    width: 170px;
-}
-
-label {
-    margin-left: 20px;
-    margin-bottom: 5px;
-    color: whitesmoke;
-}
-
-.red {
-    background-color:rgb(230, 0, 30);
-}
-
-.blue {
-    background-color: rgb(30, 0, 230);
-}
 /* game.html */
 
 #game-body {
@@ -122,13 +113,13 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 #player1-score{
     float:left;
-    margin-left: 15%;
+    margin-left: 10%;
     color: whitesmoke;
 }
 
 #player2-score{
     float:right;
-    margin-right: 15%;
+    margin-right: 10%;
     color:whitesmoke;
 }
 
@@ -169,9 +160,4 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 .btn--red {
     background-color: rgb(230, 0, 30);
-}
-
-#end-game a{
-    text-decoration: none;
-    color: white;
 }
