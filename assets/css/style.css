@@ -17,6 +17,7 @@ a {
     text-align: center;
     font-size: 45px;
     color: white;
+    background-color: rgba(75, 75, 75, 0.5);
  }
 
 /* game-info section */
@@ -166,11 +167,29 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 #error-page {
     background: url(../images/tic-tac-toe-image.png) center center / cover no-repeat fixed;
-    background-size: 500px;
+    background-size: 400px;
+    color: whitesmoke;
 }
 
 #not-found {
     text-align: center;
+    background-color: rgba(75, 75, 75, 0.5);
+}
+
+#not-found h1 {
+    font-size: 45px;
+}
+
+#not-found h2 {
+    font-size: 35px;
+}
+
+#not-found p {
+    font-size: 25px;
+}
+
+#not-found button {
+    background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
 }
 
 /* for medium screens sizes from 550px and up */
@@ -246,6 +265,11 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
         font-size: 32px;
         margin-top: 25px;
     }
+
+    /* 404 page */
+    #error-page {
+        background-size: 550px;
+    }
 }
 
 /* for medium screens sizes from 950px and up */
@@ -288,5 +312,10 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
     #end-game {
         height: 60%;
         width: 85%;     
+    }
+
+    /* 404 page */
+    #error-page {
+        background-size: 700px;
     }
 }
