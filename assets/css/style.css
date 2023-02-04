@@ -17,7 +17,6 @@ a {
     text-align: center;
     font-size: 45px;
     color: white;
-    background-color: rgba(75, 75, 75, 0.5);
  }
 
 /* game-info section */
@@ -171,9 +170,14 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
     color: whitesmoke;
 }
 
+#grey-background {
+    background-color: rgba(75, 75, 75, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
 #not-found {
     text-align: center;
-    background-color: rgba(75, 75, 75, 0.5);
 }
 
 #not-found h1 {
