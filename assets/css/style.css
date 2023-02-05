@@ -1,5 +1,10 @@
-/* index.html */
+/* font style */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+/* index.html */
+* {
+    font-family: Roboto;
+}
 body {
     background: url(../images/xo-image.png) center center / cover no-repeat fixed;
     background-size: 400px;
@@ -46,11 +51,12 @@ a {
     background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
     cursor: pointer;
     width: 200px;
-    border-color: whitesmoke;
+    border: 2px solid whitesmoke;
     display: block;
     margin: auto;
     color: whitesmoke;
     border-radius: 5px;
+    text-align: center;
 }
 
 /* game section */
@@ -147,9 +153,9 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 .btn {
     padding: 20px;
-    font-size: 25px;
+    font-size: 30px;
     color: whitesmoke;
-    border: whitesmoke solid 1px;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
     margin-top: 20px;
 }
@@ -172,7 +178,7 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 #grey-background {
     background-color: rgba(75, 75, 75, 0.5);
-    height: 100%;
+    height: 50rem;
     width: 100%;
 }
 
@@ -190,9 +196,10 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 #not-found p {
     font-size: 25px;
+    margin-bottom: 50px;
 }
 
-#not-found button {
+.back--btn {
     background: linear-gradient(to right, rgb(230, 0, 30), rgb(30, 0, 230));
 }
 
