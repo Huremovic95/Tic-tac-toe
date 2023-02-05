@@ -119,13 +119,13 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 
 #player1-score{
     float:left;
-    margin-left: 8%;
+    margin-left: 3%;
     color: whitesmoke;
 }
 
 #player2-score{
     float:right;
-    margin-right: 8%;
+    margin-right: 3%;
     color:whitesmoke;
 }
 

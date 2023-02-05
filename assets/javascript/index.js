@@ -111,7 +111,8 @@ if (roundWon){
     endGame.style.display = "grid";
 }
 }
-
+/* tried having an eventlistener for the start-game-btn did not work
+tested if the game always starts this way and it does */
 startGame();
 
 restartButton.addEventListener("click", restart);
