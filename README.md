@@ -69,3 +69,10 @@ Tic Tac Toe is a javascript game built to allow two users to play a tic tac toe 
 <ul>
 <li>Add a form where the users can put in their names and it shows in game. Instead of X turn and X score {player} name and {player} turn.</li>
 </ul>
+
+<br>
+
+<h1> Testing </h1>
+
+<h2> Responsiveness </h2>
+

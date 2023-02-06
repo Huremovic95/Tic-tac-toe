@@ -20,7 +20,7 @@ a {
 .title-game {
     margin-top: 20px;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     color: white;
  }
 
@@ -41,9 +41,6 @@ a {
 }
 
 /* start-btn section */
-#start-btn {
-    background-color: rgba(75, 75, 75, 0.5);
-}
 
 #start-game-btn {
     padding: 12px;
