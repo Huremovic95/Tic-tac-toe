@@ -57,6 +57,7 @@ function cellActivated (cell){
     checkWinner();
 }
 
+// Changes the empty activated cell to the current player
 function updateCell(cellId, currentPlayer){
     spaces[cellId] = currentPlayer;
     document.getElementById(cellId).innerText = currentPlayer;
