@@ -158,6 +158,18 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
     margin-top: 20px;
 }
 
+#player1-score {
+    border: 2px solid rgb(30, 0, 230);
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+#player2-score {
+    border: 2px solid rgb(230, 0, 30);
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
 .btn--blue {
     background-color: rgb(30, 0, 230);
 }

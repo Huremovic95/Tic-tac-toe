@@ -50,7 +50,7 @@ Tic Tac Toe is a javascript game built to allow two users to play a tic tac toe 
 
 <br>
 
-<h2>Game Page</h2>
+<h2> Game Page </h2>
 
 <ul>
 <li> The game grid has 9 cells that are responsive to the user when clicked. Depending if it's x or o's turn the cell will show the symbol of the current player. When a cell is already occupied and the user clicks on it nothing will happen.</li>
@@ -64,7 +64,7 @@ Tic Tac Toe is a javascript game built to allow two users to play a tic tac toe 
 
 <br>
 
-<h2>Features left to implement</h2>
+<h2> Features left to implement </h2>
 
 <ul>
 <li>Add a form where the users can put in their names and it shows in game. Instead of X turn and X score {player} name and {player} turn.</li>
@@ -76,3 +76,76 @@ Tic Tac Toe is a javascript game built to allow two users to play a tic tac toe 
 
 <h2> Responsiveness </h2>
 
+All pages were tested to ensure responsiveness on screen sizes from 320px and upwards as defined in <a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html" target="_blank">WCAG 2.1 Reflow criteria for responsive design</a> on Chrome, Edge, Firefox and Opera browsers.
+
+Steps to test:
+
+<ol>
+<li>Open browser and navigate to <a href="https://huremovic95.github.io/Tic-tac-toe/game.html">Tic tac toe</a></li>
+<li>Open the developer tools (right click and inspect)</li>
+<li>Set to responsive and decrease width to 320px</li>
+<li>Set the zoom to 50%</li>
+<li>Click and drag the responsive window to maximum width</li>
+</ol>
+
+Expected:
+
+Website is responsive on all screen sizes and no images are pixelated or stretched. No horizontal scroll is present. No elements overlap.
+
+Actual:
+
+Website behaved as expected.
+
+Website was also opened on the following devices and no responsive issues were seen:
+
+<ul>
+<li>Iphone 12</li>
+<li>Ipad air</li>
+</ul>
+
+<br>
+
+<h2> Accessibility </h2>
+
+Wave Accessibility tool was used throughout development and for final testing of the deployed website to check for any aid accessibility testing.
+
+The website has no errors when passing through the official <a href="https://wave.webaim.org/aim/" target="_blank">Wave Accessiblility.</a>
+
+<br>
+
+<h2> Validator Testing </h2>
+
+<ul>
+<li>HTML</li>
+<ul><li>No errors were returned when passing through the official <a href="https://validator.w3.org/" target="_blank">W3C validator</a></li></ul>
+</ul>
+
+<img src="assets/images/w3index-readme.png">
+
+<br>
+
+<img src="assets/images/w3game-readme.png">
+
+<br>
+
+<img src="assets/images/w3-404-readme.png">
+
+<br>
+
+<ul>
+<li>CSS</li>
+<ul><li>No errors were returned when passing through the official <a href="https://jigsaw.w3.org/css-validator/" target="_blank">(Jigsaw) validator</a></li></ul>
+</ul>
+
+<img src="assets/images/cssW3-readme.png">
+
+<br>
+
+<ul>
+<li>Javascript</li>
+<ul><li>No errors were returned when passing through the official <a href="https://jshint.com/" target="_blank">JShint validator</a></li>
+<li>32 warnings appeared all of them are saying the same that: 
+'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).</li></ul>
+</ul>
+
+<img src="assets/images/jshint-readme.png">
