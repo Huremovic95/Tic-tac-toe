@@ -99,8 +99,10 @@ if (roundWon){
     winnerText.innerText = `${currentPlayer} has won`;}
     if (currentPlayer === xTurn){
         xScore++;
+        firstPlayerScore.innerText = `X Score: ${xScore}`;
     } else {
         oScore++;
+        secondPlayerScore.innerText = `O Score: ${oScore}`;
     }
     gameRunning = false;
     endGame.style.display = "grid";
