@@ -185,3 +185,39 @@ After every turn(cell clicked) the current player changes. The first game player
 <h3> End of a game </h3>
 
 At the end of the game no matter what the result is all cells go back to being empty (after button is clicked). The winning players score also increments by one. If the users go back to the main page and start a new game the scores will go back to 0. If the users keep playing another game the scores keep on adding up when needed. Main page button does what it needs to and the another game button does what it needs to do.
+
+<br>
+
+<h1> Technologies </h1>
+
+<ul>
+<li>HTML</li>
+<ul><li>The structure of the Website was developed using HTML.</li></ul>
+</ul>
+
+<ul>
+<li>CSS</li>
+<ul><li>The Website was styled using custom CSS in an external file.</li></ul>
+</ul>
+
+<ul>
+<li>Javascript</li>
+<ul><li>The game play logic was created using JavaScript in an external file.
+</li></ul>
+</ul>
+
+<ul>
+<li>Visual Studio Code</li>
+<ul><li>The website was developed using Visual Studio Code.</li></ul>
+</ul>
+
+<ul>
+<li>Github</li>
+<ul><li>Source code is hosted on GitHub and delpoyed using Git Pages.</li></ul>
+</ul>
+
+<ul>
+<li>Git</li>
+<ul><li>Used to commit and push code during the development of the Website.</li></ul>
+</ul>
+
