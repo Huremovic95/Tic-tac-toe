@@ -221,3 +221,43 @@ At the end of the game no matter what the result is all cells go back to being e
 <ul><li>Used to commit and push code during the development of the Website.</li></ul>
 </ul>
 
+<br>
+
+<h1> Deployment </h1>
+
+<h2> Version Control </h2>
+
+The site was created using the Visual Studio Code editor and pushed to github to the remote repository ‘Tic-tac-toe’.
+
+The following git commands were used throughout development to push code to the remote repo:
+
+git add file / git add . - This command was used to add the file(s) to the staging area before they are committed.
+
+git commit -m “message” - This command was used to commit changes to the local repository queue ready for the final step.
+
+git push - This command was used to push all committed code to the remote repository on github.
+
+<h2> Deployment to Github pages </h2>
+
+<ul>
+<li>The site was deployed to GitHub pages. The steps to deploy are as follows:</li>
+<ul>
+<li>In the GitHub repository, navigate to the Settings tab</li>
+<li>From the menu on left select 'Pages'</li>
+<li>From the source section drop-down menu, select the Branch: main</li>
+<li>Click 'Save'</li>
+<li>A live link will be displayed in a green banner when published successfully.</li>
+</ul>
+</ul>
+
+<br>
+
+<h1> Credits </h1>
+
+<ul>
+<li><a href="https://www.w3schools.com/" target="_blank">W3school</a> was used to solve some problems/ look some things up but mostly i needed to word it in my own code/words</li>
+<li><a href="https://stackoverflow.com/" target="_blank">Stackoverflow</a> was used to solve some problems/ look some things up but mostly i needed to word it in my own code/words</li>
+<li><a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a> was used to solve some problems/ look some things up but mostly i needed to word it in my own code/words</li>
+<li><a href="https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e-g-tic-tac-toe-ui-4ao8" target="_blank">Remove the outside borders of a 3x3 grid</a> CSS code was copied and pasted to get rid of the outside borders (top, right, bottom, left) of the game grid</li>
+<li><a href="https://stackoverflow.com/questions/66001788/tic-tac-toe-winning-condition-checks-confused" target="_blank">The Checkwinner funtion</a> This code that checks the winning condition was copied and pasted with some small changes. It checks if any of the win conditions are true.</li>
+</ul>
