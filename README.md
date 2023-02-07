@@ -149,3 +149,39 @@ The website has no errors when passing through the official <a href="https://wav
 </ul>
 
 <img src="assets/images/jshint-readme.png">
+
+<br>
+
+<h2> Lighthouse Report </h2>
+
+Index page
+
+<img src="assets/images/lighthouse-index.png">
+
+Game page
+
+<img src="assets/images/lighthouse-game.png">
+
+<br>
+
+<h2> Game Play </h2>
+
+<h3> Starting the game </h3>
+
+The start game button in the index page when clicked starts the game. After clicking on the main page button in the game page the start game button still starts the game. When clicking on the restart game button in the game page the game restarts. When clicked on the back button in the browser in the game page and after that clicking on the start game button it still works.
+
+<h3> Clicking on cell's </h3>
+
+every cell got clicked it changes the innertext of that cell to the current player (x or o) and it changes the current player (also displays the current player). When clicking on an already occupied cell it does not change the cell anymore and it also doesn't change the current player (stays the same).
+
+<h3> Win conditions </h3>
+
+All possible win conditions were tested and they all work. When a player wins the end game section pops up with an option to play another game and to go back to the main page. The Player that won gets a plus one to his or her score after a win. If none of the players win and all cells are occupied the end game section pops up with "It's a draw" as text and the score of both players stay the same.
+
+<h3> Changing of players </h3>
+
+After every turn(cell clicked) the current player changes. The first game player X begins, if the another game button is clicked the next game player O begins. The beginning player keeps going back and forth whenever the another game button is clicked. When the main page button is clicked and the users start a new game player X is the one that starts.
+
+<h3> End of a game </h3>
+
+At the end of the game no matter what the result is all cells go back to being empty (after button is clicked). The winning players score also increments by one. If the users go back to the main page and start a new game the scores will go back to 0. If the users keep playing another game the scores keep on adding up when needed. Main page button does what it needs to and the another game button does what it needs to do.
