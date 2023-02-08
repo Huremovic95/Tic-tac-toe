@@ -1,5 +1,4 @@
 let gridCells = document.getElementsByClassName("cell");
-let GameOverText = document.getElementById("game-over-text");
 let restartButton = document.getElementById("restart");
 let turnMessage = document.getElementById("turn-message");
 let winnerText = document.getElementById("game-over-text");
