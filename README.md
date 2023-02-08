@@ -112,6 +112,24 @@ Wave Accessibility tool was used throughout development and for final testing of
 
 The website has no errors when passing through the official <a href="https://wave.webaim.org/aim/" target="_blank">Wave Accessiblility.</a>
 
+Testing was focused to ensure the following criteria were met:
+
+<ul><li>All forms have associated labels or aria-labels so that this is read out on a screen reader to users who tab to form inputs.</li>
+<li>Color contrasts meet a minimum ratio as specified in WCAG 2.1 Contrast Guidelines.</li>
+<li>Heading levels are not missed or skipped to ensure the importance of content is relayed correctly to the end user. The game page does not have a heading though but it's obvious for the user that it's a tic-tac-toe game.</li>
+<li>All content is contained within landmarks to ensure ease of use for assistive technology, allowing the user to navigate by page regions.</li>
+<li>All not textual content had alternative text or titles so descriptions are read out to screen readers
+HTML page lang attribute has been set.</li>
+<li>Aria properties have been implemented correctly
+WCAG 2.1 Coding best practices being followed.</li>
+</ul>
+
+index page
+<img src="assets/images/Wave-index-readme.png">
+
+Game page
+<img src="assets/images/Wave-game-readme.png">
+
 <br>
 
 <h2> Validator Testing </h2>
@@ -165,7 +183,7 @@ Game page
 
 <br>
 
-<h2> Game Play </h2>
+<h2>  Game Play Testing </h2>
 
 <h3> Starting the game </h3>
 
@@ -175,17 +193,41 @@ The start game button in the index page when clicked starts the game. After clic
 
 every cell got clicked it changes the innertext of that cell to the current player (x or o) and it changes the current player (also displays the current player). When clicking on an already occupied cell it does not change the cell anymore and it also doesn't change the current player (stays the same).
 
+<em> Eight of the nine cells got clicked </em>
+
+<img src="assets/images/test-cells.png">
+
 <h3> Win conditions </h3>
 
 All possible win conditions were tested and they all work. When a player wins the end game section pops up with an option to play another game and to go back to the main page. The Player that won gets a plus one to his or her score after a win. If none of the players win and all cells are occupied the end game section pops up with "It's a draw" as text and the score of both players stay the same.
+
+<em> Draw </em>
+
+<img src="assets/images/test-draw.png">
+
+<em> Player O won </em>
+
+<img src="assets/images/test-win.png">
 
 <h3> Changing of players </h3>
 
 After every turn(cell clicked) the current player changes. The first game player X begins, if the another game button is clicked the next game player O begins. The beginning player keeps going back and forth whenever the another game button is clicked. When the main page button is clicked and the users start a new game player X is the one that starts.
 
+<em> After 3 games played O starts the 4th (even) game </em>
+
+<img src="assets/images/test-o-start.png">
+
+<em>After O started and clicked on the cell in the middle it is now X's turn</em>
+
+<img src="assets/images/test-changeplayer.png">
+
 <h3> End of a game </h3>
 
 At the end of the game no matter what the result is all cells go back to being empty (after button is clicked). The winning players score also increments by one. If the users go back to the main page and start a new game the scores will go back to 0. If the users keep playing another game the scores keep on adding up when needed. Main page button does what it needs to and the another game button does what it needs to do.
+
+<em>Endgame player X won and X score got incremented</em>
+
+<img src="assets/images/test-endgame.png">
 
 <br>
 
