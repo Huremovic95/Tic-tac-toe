@@ -40,6 +40,10 @@ a {
     font-size: 35px;
 }
 
+#history {
+    margin-bottom: 50px;
+}
+
 /* start-btn section */
 
 #start-game-btn {
@@ -109,21 +113,23 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
 /* players section*/
 #turn-message {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     color: whitesmoke;
-    padding: 25px 0;
+    margin: 25px 0;
 }
 
 #player1-score{
     float:left;
-    margin-left: 3%;
+    margin-left: 5%;
     color: whitesmoke;
+    font-size: 25px;
 }
 
 #player2-score{
     float:right;
-    margin-right: 3%;
+    margin-right: 5%;
     color:whitesmoke;
+    font-size: 25px;
 }
 
 /* end-game section */
@@ -261,15 +267,17 @@ https://dev.to/pat_the99/how-to-remove-outside-borders-of-a-3x3-grid-using-css-e
     /* players section*/
     #turn-message {
         font-size: 50px;
-        padding: 35px 0;
+        margin: 35px 0;
     }
     
     #player1-score{
         margin-left: 10%;
+        font-size: 30px;
     }
     
     #player2-score{
         margin-right: 10%;
+        font-size: 30px;
     }
 
     /* end-game section */
