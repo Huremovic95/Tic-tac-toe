@@ -56,8 +56,9 @@ Tic Tac Toe is a javascript game built to allow two users to play a tic tac toe 
 <li> The game grid has 9 cells that are responsive to the user when clicked. Depending if it's x or o's turn the cell will show the symbol of the current player. When a cell is already occupied and the user clicks on it nothing will happen.</li>
 <img src="assets/images/game-grid-readme.png">
 <li>The Players Turn section shows which players turn it is and changes after every play and at the beginning of the game the player that starts also changes.</li>
+<img src="assets/images/turn-readme.png">
 <li>The Player Score section shows the score(win's) of the X and of the O player. After a win the user gets one added to his or her score.</li>
-<img src="assets/images/turn-score-readme.png">
+<img src="assets/images/score-readme.png">
 <li>At the end of the game when a player wins or when the game is a draw, a section pops up with information who won (or draw) and gives the users the option to play again or go back to the Home page.</li>
 <img src="assets/images/endgame-readme.png">
 </ul>
