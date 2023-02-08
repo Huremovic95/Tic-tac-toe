@@ -69,6 +69,7 @@ Tic Tac Toe is a javascript game built to allow two users to play a tic tac toe 
 
 <ul>
 <li>Add a form where the users can put in their names and it shows in game. Instead of X turn and X score {player} name and {player} turn.</li>
+<li> A single player mode where the user can play against a computer with difficulty settings.</li>
 </ul>
 
 <br>
@@ -101,6 +102,7 @@ Website was also opened on the following devices and no responsive issues were s
 
 <ul>
 <li>Iphone 12</li>
+<li>Iphone 8</li>
 <li>Ipad air</li>
 </ul>
 
@@ -116,7 +118,7 @@ Testing was focused to ensure the following criteria were met:
 
 <ul><li>All forms have associated labels or aria-labels so that this is read out on a screen reader to users who tab to form inputs.</li>
 <li>Color contrasts meet a minimum ratio as specified in WCAG 2.1 Contrast Guidelines.</li>
-<li>Heading levels are not missed or skipped to ensure the importance of content is relayed correctly to the end user. The game page does not have a heading though but it's obvious for the user that it's a tic-tac-toe game.</li>
+<li>Heading levels are not missed or skipped to ensure the importance of content is relayed correctly to the end user. The game page does not have a heading though but it's obvious for the user that it's a tic-tac-toe game, with a heading the user experience will be less optimal.</li>
 <li>All content is contained within landmarks to ensure ease of use for assistive technology, allowing the user to navigate by page regions.</li>
 <li>All not textual content had alternative text or titles so descriptions are read out to screen readers
 HTML page lang attribute has been set.</li>
